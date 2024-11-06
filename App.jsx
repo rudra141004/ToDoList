@@ -10,11 +10,17 @@ function App() {
     'Go to gym',
     'Walk dog'
   ]);
+  
+  const addTask = (taskText) => {
+    if (taskText && !tasks.includes(taskText)) {  // Avoid duplicates
+      setTasks([...tasks, taskText]);
+    }
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <ToDoList tasks={tasks} />
-      <ToDoForm />
+      <ToDoForm addTask={addTask} />
     </SafeAreaView>
   );
 }
