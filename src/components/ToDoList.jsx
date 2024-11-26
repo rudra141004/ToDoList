@@ -1,4 +1,4 @@
-// ToDoList.js
+// src/components/ToDoList.jsx
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -18,10 +18,7 @@ const styles = StyleSheet.create({
   },
   taskItem: {
     padding: 10,
-    borderBottomWidth: 1,
-    borderColor: '#ccc',
-    fontSize: 16,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#e0e0e0',
     marginVertical: 5,
     borderRadius: 5,
   },
